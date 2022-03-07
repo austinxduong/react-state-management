@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.counter-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  border-style:double;
+  border-color: aqua;
+  border-radius: 100;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
