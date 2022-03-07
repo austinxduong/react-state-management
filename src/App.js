@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react'
 import Fetch from './fetch/Fetch';
@@ -13,16 +13,17 @@ const [counter, setCounter] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Ask Austi... </h1>
         {counter}
         <div className='counter-buttons'>
-        <button
+        <button 
+          id = "add"
           onClick={() => {
             setCounter(counter + 1)
           }}
         >+</button>
         <button
+          id = "subtract"
           onClick={() => {
             setCounter(counter -1)
           }}
