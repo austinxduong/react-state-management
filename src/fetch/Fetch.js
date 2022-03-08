@@ -19,7 +19,7 @@ function Fetch() {
         .then((response) => response.json())
         .then((json) => {
             console.log(json);
-            setData(json);
+            setData(json.data[0]);
     });
 
 }
@@ -28,7 +28,10 @@ function Fetch() {
   return (
     <div>
         <button onClick={fetchAPI}>Fetch API</button>
-        <pre>{JSON.stringify(data.data[0])}</pre>
+        <div className='api-card'>
+            <pre>{JSON.stringify(data)}</pre>
+        </div>
+        
     </div>
   )
 }
