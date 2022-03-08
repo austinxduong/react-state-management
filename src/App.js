@@ -13,8 +13,10 @@ const [counter, setCounter] = useState(0);
   return (
     <div className="App-container">
       <header className="App-header">
+
         <h1>Ask Austi... </h1>
         {counter}
+
         <div className='counter-buttons'>
         <button 
           id = "add"
@@ -29,8 +31,11 @@ const [counter, setCounter] = useState(0);
           }}
         >-</button>
         </div>
-          
-        <Fetch />        
+        
+        <div className='quote-width'>
+        <p><Fetch /></p>
+        </div>
+
       </header>
     </div>
   );
