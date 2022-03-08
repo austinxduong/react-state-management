@@ -11,7 +11,7 @@ const [counter, setCounter] = useState(0);
 
   
   return (
-    <div className="App">
+    <div className="App-container">
       <header className="App-header">
         <h1>Ask Austi... </h1>
         {counter}
@@ -29,6 +29,7 @@ const [counter, setCounter] = useState(0);
           }}
         >-</button>
         </div>
+
         <Fetch />        
       </header>
     </div>
