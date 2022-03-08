@@ -12,7 +12,7 @@ import { useState } from "react";
 
 function Fetch() {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(["hello"]);
 
     const fetchAPI = () => {
         fetch('https://api.aakhilv.me/fun/wouldyourather')
@@ -29,7 +29,7 @@ function Fetch() {
     <div>
         <button onClick={fetchAPI}>Fetch API</button>
         <div className='api-card'>
-            <pre>{JSON.stringify(data)}</pre>
+            <pre className='fetch'>{JSON.stringify(data)}</pre>
         </div>
         
     </div>

@@ -30,5 +30,19 @@
 
 .api-card {
   display: flex;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  word-wrap: break-word
+}
+
+.fetch {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
 }
