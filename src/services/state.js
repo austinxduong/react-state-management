@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export const changeText = () => {
-    const [text, setText] = useState=('');
-}
+// export const changeText = () => {
+//     const [text, setText] = useState=('');
+// }
 
