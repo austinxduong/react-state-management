@@ -28,7 +28,7 @@ function Fetch() {
   return (
     <div>
         <button onClick={fetchAPI}>Fetch API</button>
-        <pre>{JSON.stringify(data)}</pre>
+        <pre>{JSON.stringify(data.data[0])}</pre>
     </div>
   )
 }
