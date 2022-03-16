@@ -33,7 +33,9 @@ const [counter, setCounter] = useState(0);
         </div>
         
         <div className='quote-width'>
-        <p><Fetch /></p>
+          
+            <Fetch />
+          
         </div>
 
       </header>

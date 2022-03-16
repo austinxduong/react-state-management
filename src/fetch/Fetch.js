@@ -17,10 +17,15 @@ function Fetch() {
     const fetchAPI = () => {
         fetch('https://api.aakhilv.me/fun/wyr')
         .then((response) => response.json())
+        
         .then((json) => {
             console.log(json);
-            setData(json);
-    });
+            setData(json[0]);
+        
+    })
+    .catch(error => console.log("Network Error!"))
+ 
+ 
 };
 
   return (
